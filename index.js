@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api/feedbacks", feedbackRoutes);
-
+module.exports = app; // For Vercel deployment
 
 // Root Route
 app.get("/", (req, res) => {
